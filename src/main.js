@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import routes from './routes'
+import BootstrapVue from 'bootstrap-vue'
+import './styles.scss'
+Vue.use(BootstrapVue)
 
 const app = new Vue({
   el: '#app',

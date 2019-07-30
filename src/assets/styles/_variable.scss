@@ -1,0 +1,26 @@
+$primary : #111b5c;
+$info : #34a6e0;
+$light : #a1b5e3;
+$btn-border-radius : 0;
+$btn-border-radius-sm : 0;
+$btn-border-radius-lg : 0;
+$input-bg : transparentize(rgba(0,0,0,0),0);
+$input-border-radius : 0;
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index';
+.form-control {
+  border-width: 0 0 1px;
+  padding-left: 0;
+  padding-right: 0;
+  &.text-light {
+    &::placeholder {
+      color: #efefef;
+      font-weight: 300;
+    }
+  }
+}
+
+select.form-control {
+  border: 0;
+  appearance: none;
+}

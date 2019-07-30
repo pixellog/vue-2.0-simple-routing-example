@@ -20,7 +20,9 @@
     },
     computed: {
       isActive () {
-        return this.href === this.$root.currentRoute
+        return !!this.$root.currentRoute.match(this.href) // 2차메뉴 활성화를 위한 변경
+        // console.log(this.$root.currentRoute, this.href, !!this.$root.currentRoute.match(this.href))
+        // return this.href === this.$root.currentRoute
       }
     },
     methods: {
@@ -36,9 +38,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .active {
-    color: cornflowerblue;
-  }
-</style>
